@@ -26,7 +26,8 @@ sp<Camera> Camera::create(const sp<::android::hardware::ICamera>& camera)
 ```
 
 example>
+```
 sp<Camera> 
-
+```
 
 </pr>
