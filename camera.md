@@ -29,6 +29,5 @@ frameworks/av/camera 에 위치한 3가지 바인더 클래스가 존재한다.
 
 
 ## Android camera preview workflow
-Camera 클래스의 open 메서드를 호출한다고 하면, 
-하드웨어 레벨까지 전달되고 다시 Application API 레벨까지 올라오는 것을 그릴 수 있어야 한다. 
 ![](/images/android-camera-basics-56-638.jpg)
+![](/images/android-camera-basics-57-638.jpg)
