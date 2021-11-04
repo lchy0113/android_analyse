@@ -1,5 +1,4 @@
 # smart pointer
-> sp<T>
 
 /frameworks/av/camera/Camera.cpp
 ```
@@ -25,9 +24,10 @@ sp<Camera> Camera::create(const sp<::android::hardware::ICamera>& camera)
 
 ```
 
-example>
+> example>
 ```
 sp<Camera> 
 ```
 
-</pr>
+<hr/>
+
