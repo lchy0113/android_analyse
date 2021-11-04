@@ -33,7 +33,7 @@ sp<Camera>
 
 
 _/frameworks/av/camera/Camera.cpp_
-```/frameworks/av/camera/Camera.cpp
+``` /frameworks/av/camera/Camera.cpp
 //#define LOG_NDEBUG 0
 #define LOG_TAG "Camera"
 #include <utils/Log.h>
