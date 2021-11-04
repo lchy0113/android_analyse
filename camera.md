@@ -26,3 +26,9 @@ frameworks/av/camera 에 위치한 3가지 바인더 클래스가 존재한다.
 
 ### Kernel driver
 실제 카메라 하드웨어와 HAL과 상호 작용을 하는 단계로, 카메라와 드라이버는 YV12, NV21 이미지 형식을 지원해야만 카메라의 미리보기와 비디오 녹화가 가능하다.
+
+
+## Android camera preview workflow
+Camera 클래스의 open 메서드를 호출한다고 하면, 
+하드웨어 레벨까지 전달되고 다시 Application API 레벨까지 올라오는 것을 그릴 수 있어야 한다. 
+![](/images/android-camera-basics-56-638.jpg)
