@@ -1,6 +1,6 @@
 # smart pointer
 
-/frameworks/av/camera/Camera.cpp
+_/frameworks/av/camera/Camera.cpp_
 ```
 // construct a camera client from an existing camera remote
 sp<Camera> Camera::create(const sp<::android::hardware::ICamera>& camera)
@@ -29,5 +29,18 @@ sp<Camera> Camera::create(const sp<::android::hardware::ICamera>& camera)
 sp<Camera> 
 ```
 
-<hr/>
+---
 
+
+_/frameworks/av/camera/Camera.cpp_
+```
+//#define LOG_NDEBUG 0
+#define LOG_TAG "Camera"
+#include <utils/Log.h>
+#include <utils/threads.h>
+#include <utils/String16.h>
+#include <binder/IPCThreadState.h>
+#include <binder/IServiceManager.h>
+#include <binder/IMemory.h>
+```
+__#include <binder/IMemory.h>__
