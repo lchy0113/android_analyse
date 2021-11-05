@@ -2,9 +2,9 @@
 
 
 
-1. system service 를 추가한다. 아래의 코드를 생성한다.
-_frameworks/base/services/core/java/com/android/server/GpioService.java_
+1. system service 를 추가한다. 아래의 코드를 생성한다.  
 
+_frameworks/base/services/core/java/com/android/server/GpioService.java_
 ```
 package com.android.server;
 import android.os.IGpioService;
@@ -98,8 +98,8 @@ _frameworks/base/services/java/com/android/server/SystemServer.java_
 ```
 
 3. aidl을 추가하여 애플리케이션에서 추가된 서비스에 접근할 수 있는 인터페이스를 만든다.
-_frameworks/base/core/java/android/os/IGpioService.aidl_
 
+_frameworks/base/core/java/android/os/IGpioService.aidl_
 ```
 package android.os;
 
@@ -134,8 +134,8 @@ interface IGpioService
 ```
 
 4. 추가한 aidl 파일을 등록한다.
-_frameworks/base/Android.mk_
 
+_frameworks/base/Android.mk_
 ```
 	core/java/android/os/IGpioService.aidl \
 ```
@@ -143,8 +143,8 @@ _frameworks/base/Android.mk_
 5. build.
 
 6. build 완료 후, 새로 수정된 프레임워크 라이브러리를 추출한다. 라이브러리의 경로는 아래와 같다
-_out/target/common/obj/JAVA_LIBRARIES_
 
+_out/target/common/obj/JAVA_LIBRARIES_
 ```
 out/target/common/obj/JAVA_LIBRARIES$ ls framework_intermediates/
 anno     classes2.dex  classes.dex.toc         classes.jack  classes.jar.toc  dotdot              jack-rsc                   javalib.jar  link_type  lowpan  packages  src       telephony  with-local
